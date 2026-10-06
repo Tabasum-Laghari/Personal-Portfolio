@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabasum Laghari | Frontend Developer & Prompt Engineer</title>
+  <meta name="description" content="Portfolio of Tabasum Laghari — Frontend Web Developer, Prompt Engineering & AI Specialist, MS Word Formatting Specialist." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+          },
+          colors: {
+            ink: "#0b1117",
+            panel: "#111a22",
+            edge: "#1f2c37",
+            accent: "#2dd4bf",
+            accentDeep: "#14b8a6",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { background: #0b1117; }
+    .grid-bg {
+      background-image: radial-gradient(#1f2c37 1px, transparent 1px);
+      background-size: 26px 26px;
+    }
+    :focus-visible { outline: 2px solid #2dd4bf; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+
+<body class="font-sans text-slate-300 antialiased">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b border-edge bg-ink/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+      <a href="#home" class="leading-tight">
+        <span class="block text-sm font-bold text-white">Tabasum Laghari</span>
+        <span class="block font-mono text-[11px] text-slate-500">BSIT & AI Engineer</span>
+      </a>
+      <nav class="hidden items-center gap-6 text-sm md:flex">
+        <a class="text-accent" href="#home">Overview</a>
+        <a class="hover:text-white" href="#about">About</a>
+        <a class="hover:text-white" href="#skills">Skills</a>
+        <a class="hover:text-white" href="#experience">Experience</a>
+        <a class="hover:text-white" href="#certifications">Certifications</a>
+        <a class="hover:text-white" href="#education">Education</a>
+      </nav>
+      <a href="#contact" class="rounded-md bg-accent px-4 py-2 text-sm font-semibold text-ink hover:bg-accentDeep">Contact Me</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="grid-bg">
+      <div class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+        <span class="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 font-mono text-xs text-accent">
+          <span class="h-2 w-2 rounded-full bg-accent"></span> Open to internships & tech opportunities
+        </span>
+
+        <div class="mt-8 grid items-center gap-10 lg:grid-cols-5">
+          <div class="lg:col-span-3">
+            <h1 class="text-4xl font-extrabold leading-tight text-white md:text-5xl">
+              Hi, I'm <span class="text-accent">Tabasum Laghari</span>
+            </h1>
+            <p class="mt-3 text-lg font-medium text-slate-200">
+              Frontend Web Developer · Learning MERN Stack · Prompt Engineering & AI Specialist · MS Word Formatting Specialist
+            </p>
+            <p class="mt-3 font-mono text-sm text-slate-500">Shaheed Benazirabad District, Sindh, Pakistan</p>
+            <p class="mt-6 max-w-xl leading-relaxed text-slate-400">
+              Passionate Information Technology student with 3 years of hands-on frontend web development experience
+              (HTML, CSS, JavaScript, React.js, Tailwind CSS) and specialized expertise in Prompt Engineering and
+              Document Architecture. Currently mastering backend with the MERN Stack.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#contact" class="rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-ink hover:bg-accentDeep">Get In Touch</a>
+              <a href="mailto:lagharitaj00@gmail.com" class="rounded-md border border-edge bg-panel px-5 py-2.5 text-sm font-semibold text-white hover:border-accent">Email Me</a>
+              <a href="https://www.linkedin.com/in/tabasum-laghari" target="_blank" rel="noopener" class="rounded-md border border-edge bg-panel px-5 py-2.5 text-sm font-semibold text-white hover:border-accent">View LinkedIn Profile</a>
+            </div>
+          </div>
+
+          <!-- terminal card -->
+          <div class="lg:col-span-2">
+            <div class="overflow-hidden rounded-lg border border-edge bg-panel font-mono text-[13px]">
+              <div class="flex items-center gap-1.5 border-b border-edge px-4 py-2.5">
+                <span class="h-2.5 w-2.5 rounded-full bg-red-400/70"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-yellow-400/70"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-green-400/70"></span>
+                <span class="ml-3 text-xs text-slate-500">engineer://tabasum_laghari</span>
+              </div>
+              <pre class="overflow-x-auto p-4 leading-6 text-slate-300"><span class="text-slate-500">// System Initialization</span>
+<span class="text-accent">const</span> engineer = {
+  name: <span class="text-amber-300">'Tabasum Laghari'</span>,
+  role: <span class="text-amber-300">'Frontend & AI Engineer'</span>,
+  education: <span class="text-amber-300">'BS IT @ QUEST'</span>,
+  focus: [<span class="text-amber-300">'React'</span>, <span class="text-amber-300">'Tailwind'</span>,
+          <span class="text-amber-300">'Prompt Eng.'</span>, <span class="text-amber-300">'MERN'</span>],
+  python: <span class="text-amber-300">'10 Days of Python ✔'</span>,
+  status: <span class="text-amber-300">'Seeking 2025 Opportunities'</span>
+};
+<span class="text-slate-500">// System ready. Dispatching...</span></pre>
+            </div>
+            <div class="mt-3 flex items-center justify-between rounded-md border border-edge bg-panel px-4 py-2 font-mono text-xs">
+              <span class="text-accent">Verified Identity</span>
+              <span class="text-slate-500">Quest ID '26</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- stats -->
+        <div class="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <p class="text-3xl font-extrabold text-accent">3+</p>
+            <p class="mt-1 text-sm text-slate-400">Years of Frontend Experience</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <p class="text-3xl font-extrabold text-accent">2</p>
+            <p class="mt-1 text-sm text-slate-400">Completed Internships</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <p class="text-3xl font-extrabold text-accent">5+</p>
+            <p class="mt-1 text-sm text-slate-400">Professional Certifications</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <p class="text-3xl font-extrabold text-accent">2024–2028</p>
+            <p class="mt-1 text-sm text-slate-400">BS IT Candidate at QUEST</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-edge">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <p class="font-mono text-xs text-accent">Foundation & Technology</p>
+        <h2 class="mt-2 text-3xl font-bold text-white">About Me & Background</h2>
+
+        <div class="mt-8 grid gap-8 lg:grid-cols-3">
+          <div class="rounded-lg border border-edge bg-panel p-6 lg:col-span-2">
+            <p class="font-mono text-xs text-accent">Academic Pillar · QUEST Nawabshah</p>
+            <p class="mt-4 leading-relaxed">
+              I am an undergraduate student pursuing a <strong class="text-white">Bachelor of Science in Information Technology (2024–2028)</strong>
+              at Quaid-e-Awam University of Engineering, Sciences and Technology (QUEST), Nawabshah.
+            </p>
+            <p class="mt-3 leading-relaxed text-slate-400">
+              Over the past three years, my journey in technology has centered around software craftsmanship with a strong focus on
+              frontend development. I treat user interfaces as high-precision systems: performant, responsive, accessible and
+              aesthetically cohesive. Alongside frontend work, I have built a strong foundation in Python — I completed the
+              <strong class="text-slate-200">10 Days of Python</strong> program by Next Generation — and I actively use AI-assisted workflows
+              and prompt engineering to build faster and smarter.
+            </p>
+
+            <div class="mt-6 grid gap-3 sm:grid-cols-2">
+              <div class="rounded-md border border-edge bg-ink p-4">
+                <h3 class="text-sm font-semibold text-white">UI/UX Engineering</h3>
+                <p class="mt-1 text-sm text-slate-400">Component architecture with React.js and Tailwind CSS, delivering responsive, pixel-accurate interfaces.</p>
+              </div>
+              <div class="rounded-md border border-edge bg-ink p-4">
+                <h3 class="text-sm font-semibold text-white">Prompt & AI Integration</h3>
+                <p class="mt-1 text-sm text-slate-400">Multi-step structured prompting, context management and agentic workflows for real tasks.</p>
+              </div>
+              <div class="rounded-md border border-edge bg-ink p-4">
+                <h3 class="text-sm font-semibold text-white">Technical Documentation</h3>
+                <p class="mt-1 text-sm text-slate-400">Specialized MS Word document architecture, styles, typography and professional layouts.</p>
+              </div>
+              <div class="rounded-md border border-edge bg-ink p-4">
+                <h3 class="text-sm font-semibold text-white">Python Programming</h3>
+                <p class="mt-1 text-sm text-slate-400">Completed 10 Days of Python (Next Generation): core syntax, logic, functions and problem solving.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- photo -->
+          <div class="rounded-lg border border-edge bg-panel p-6 text-center">
+            <img src="assets/profile.jpg" alt="Portrait of Tabasum Laghari"
+                 class="mx-auto h-56 w-56 rounded-full border-4 border-accent/60 object-cover" />
+            <h3 class="mt-5 text-lg font-bold text-white">Tabasum Laghari</h3>
+            <p class="font-mono text-xs text-slate-500">QUEST IT Candidate · Sindh, PK</p>
+            <div class="mt-5 border-t border-edge pt-4 text-left">
+              <p class="mb-2 font-mono text-xs text-slate-500">Operational Paradigms</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded border border-edge bg-ink px-2 py-1 font-mono text-xs text-accent">Modern Web Standards</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1 font-mono text-xs text-accent">Prompt Architectures</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1 font-mono text-xs text-accent">Agentic Workflows</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1 font-mono text-xs text-accent">Python Basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="border-t border-edge">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <p class="font-mono text-xs text-accent">Engine & Capabilities</p>
+        <h2 class="mt-2 text-3xl font-bold text-white">Technical Stack & Specializations</h2>
+        <p class="mt-2 max-w-2xl text-slate-400">A structured inventory of client-side engineering tools, generative AI techniques and emerging full-stack paradigms.</p>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <!-- frontend -->
+          <div class="rounded-lg border border-edge bg-panel p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-white">Front-End Development</h3>
+              <span class="rounded border border-accent/40 px-2 py-0.5 font-mono text-[11px] text-accent">Primary · 3+ yrs</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">Specialized in building clean, single-page applications, modular styling architectures and responsive layouts.</p>
+            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+              <span class="rounded border border-edge bg-ink px-2 py-1">HTML5 Semantic</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">CSS3 Modern</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">JavaScript (ES6+)</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">React.js</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Tailwind CSS</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Responsive UI/UX</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Component Architecture</span>
+            </div>
+          </div>
+
+          <!-- AI -->
+          <div class="rounded-lg border border-edge bg-panel p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-white">AI & Prompt Engineering</h3>
+              <span class="rounded border border-accent/40 px-2 py-0.5 font-mono text-[11px] text-accent">Certified</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">Leveraging structured prompting, context handling and terminal-based agentic tools to automate real workflows.</p>
+            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+              <span class="rounded border border-edge bg-ink px-2 py-1">Essential Prompt Writing</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Claude Code Workflows</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Prompt Optimization</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">AI Essentials</span>
+            </div>
+          </div>
+
+          <!-- python -->
+          <div class="rounded-lg border border-edge bg-panel p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-white">Python Programming</h3>
+              <span class="rounded border border-accent/40 px-2 py-0.5 font-mono text-[11px] text-accent">Completed</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">Completed the <strong class="text-slate-200">10 Days of Python</strong> program by Next Generation, building a strong base in Python fundamentals.</p>
+            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+              <span class="rounded border border-edge bg-ink px-2 py-1">Variables & Data Types</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Loops & Conditions</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Functions</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Problem Solving</span>
+            </div>
+          </div>
+
+          <!-- backend -->
+          <div class="rounded-lg border border-edge bg-panel p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-white">Backend & Databases</h3>
+              <span class="rounded border border-amber-400/40 px-2 py-0.5 font-mono text-[11px] text-amber-300">In Progress · MERN</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">Expanding into full-stack foundations: server-side logic, REST APIs and document databases.</p>
+            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+              <span class="rounded border border-edge bg-ink px-2 py-1">Node.js Runtime</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Express.js APIs</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">MongoDB & Mongoose</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">RESTful Architecture</span>
+            </div>
+          </div>
+
+          <!-- tooling -->
+          <div class="rounded-lg border border-edge bg-panel p-6 md:col-span-2">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-white">Specialized & Tooling Stack</h3>
+              <span class="rounded border border-accent/40 px-2 py-0.5 font-mono text-[11px] text-accent">Specialist</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">Professional document formatting, version control and everyday developer tooling.</p>
+            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+              <span class="rounded border border-edge bg-ink px-2 py-1">MS Word Document Architecture</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Technical Report Styling</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Git Version Control</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">GitHub Pages</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">VS Code Workspaces</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="border-t border-edge">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <p class="font-mono text-xs text-accent">Field Work</p>
+        <h2 class="mt-2 text-3xl font-bold text-white">Professional Experience</h2>
+        <p class="mt-2 max-w-2xl text-slate-400">Completed intensive frontend internships delivering real-world components, responsive architectures and optimized client sites.</p>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <div class="rounded-lg border border-edge bg-panel p-6">
+            <p class="font-mono text-xs text-slate-500">Career Highlights</p>
+            <p class="mt-2 text-2xl font-bold text-white">2 Successful Internships Completed</p>
+            <p class="mt-3 text-sm text-slate-400">Cross-browser compatibility testing, responsive layout delivery and clean, maintainable code from start to finish.</p>
+            <p class="mt-4 rounded border border-edge bg-ink px-3 py-2 font-mono text-xs text-accent">100% on-time execution</p>
+          </div>
+
+          <div class="space-y-6 lg:col-span-2">
+            <article class="rounded-lg border border-edge bg-panel p-6">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-lg font-bold text-white">Nexvel Hub Official</h3>
+                  <p class="text-sm text-accent">Frontend Website Development Intern</p>
+                </div>
+                <span class="font-mono text-xs text-slate-500">Sep 2025 – Nov 2025</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Successfully worked on an interactive website internship. Engineered modern, mobile-first responsive web
+                interfaces, translated UI/UX design mockups into functional frontend components using modern HTML, CSS and
+                JavaScript, and optimized page performance.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+                <span class="rounded border border-edge bg-ink px-2 py-1">Responsive Layouts</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1">Mockup Translation</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1">JavaScript ES6+</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1">UI Optimization</span>
+              </div>
+            </article>
+
+            <article class="rounded-lg border border-edge bg-panel p-6">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-lg font-bold text-white">CodeAlpha</h3>
+                  <p class="text-sm text-accent">Frontend Web Development Intern</p>
+                </div>
+                <span class="font-mono text-xs text-slate-500">Sep 2025 – Oct 2025 · Remote</span>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                Completed comprehensive frontend development internship at CodeAlpha. Implemented robust cross-browser
+                compatible UI elements, interactive client-side features, and modular code structures. Maintained clean
+                repository versioning and delivered high-quality projects within strict deadlines.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+                <span class="rounded border border-edge bg-ink px-2 py-1">Cross-Browser Compat</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1">Modular Components</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1">Client-Side Logic</span>
+                <span class="rounded border border-edge bg-ink px-2 py-1">Git Versioning</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="border-t border-edge">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <p class="font-mono text-xs text-accent">Accreditations</p>
+        <h2 class="mt-2 text-3xl font-bold text-white">Licenses & Certifications</h2>
+        <p class="mt-2 max-w-2xl text-slate-400">Continuous validation across foundational AI, structured prompt engineering, advanced agentic terminal execution and modern web development.</p>
+
+        <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <div class="flex items-center justify-between"><h3 class="font-semibold text-white">AI Essentials</h3><span class="font-mono text-[11px] text-accent">Verified</span></div>
+            <p class="mt-2 text-sm text-slate-400">Foundational knowledge of machine intelligence paradigms, key AI workflows and contemporary generative principles.</p>
+            <p class="mt-4 font-mono text-xs text-slate-500">Credential type: Foundational AI</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <div class="flex items-center justify-between"><h3 class="font-semibold text-white">Essential Prompt Writing</h3><span class="font-mono text-[11px] text-accent">Verified</span></div>
+            <p class="mt-2 text-sm text-slate-400">Mastery over structured prompt systems: system instructions, few-shot prompting and context design.</p>
+            <p class="mt-4 font-mono text-xs text-slate-500">Credential type: Prompt Specialist</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <div class="flex items-center justify-between"><h3 class="font-semibold text-white">Claude Code in Action</h3><span class="font-mono text-[11px] text-accent">Agentic Mastery</span></div>
+            <p class="mt-2 text-sm text-slate-400">Terminal workflows employing agentic development, multi-file code exploration and automation.</p>
+            <p class="mt-4 font-mono text-xs text-slate-500">Credential type: Agentic Coding</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <div class="flex items-center justify-between"><h3 class="font-semibold text-white">Claude Code 101</h3><span class="font-mono text-[11px] text-accent">Completed</span></div>
+            <p class="mt-2 text-sm text-slate-400">Certificate of completion covering core mechanics of AI-assisted terminal development workflows.</p>
+            <p class="mt-4 font-mono text-xs text-slate-500">Status: Fully completed</p>
+          </div>
+          <div class="rounded-lg border border-edge bg-panel p-5">
+            <div class="flex items-center justify-between"><h3 class="font-semibold text-white">Website Development Certification</h3><span class="font-mono text-[11px] text-accent">Completed</span></div>
+            <p class="mt-2 text-sm text-slate-400">Full frontend standards and architecture: semantic HTML5, CSS3 layout systems and JavaScript DOM manipulation.</p>
+            <p class="mt-4 font-mono text-xs text-slate-500">Specialization: Responsive Frontend Engineering</p>
+          </div>
+          <div class="rounded-lg border border-accent/50 bg-panel p-5">
+            <div class="flex items-center justify-between"><h3 class="font-semibold text-white">10 Days of Python</h3><span class="font-mono text-[11px] text-accent">Completed</span></div>
+            <p class="mt-2 text-sm text-slate-400">Completed the 10-day Python program by Next Generation covering core syntax, logic, functions and hands-on practice.</p>
+            <p class="mt-4 font-mono text-xs text-slate-500">Issuer: Next Generation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="border-t border-edge">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <p class="font-mono text-xs text-accent">Formal Academia</p>
+        <h2 class="mt-2 text-3xl font-bold text-white">Academic Education</h2>
+
+        <div class="mt-8 grid items-center gap-6 rounded-lg border border-edge bg-panel p-6 md:grid-cols-3">
+          <div class="md:col-span-2">
+            <h3 class="text-xl font-bold text-white">Quaid-e-Awam University of Engineering, Sciences and Technology (QUEST)</h3>
+            <p class="mt-1 text-accent">Bachelor of Science in Information Technology</p>
+            <p class="mt-1 font-mono text-xs text-slate-500">September 2024 – December 2028</p>
+            <p class="mt-4 text-sm leading-relaxed text-slate-400">
+              Engaging in an intensive 4-year curriculum building up to build profound computational thinking, software design
+              principles and systems architecture. Coursework and lab work emphasize:
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs">
+              <span class="rounded border border-edge bg-ink px-2 py-1">Data Structures & Algorithm Analysis</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Web Technologies & Client Architecture</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Database Systems & Relational Modeling</span>
+              <span class="rounded border border-edge bg-ink px-2 py-1">Software Engineering Methodologies</span>
+            </div>
+          </div>
+          <div class="rounded-lg border border-edge bg-ink p-6 text-center">
+            <p class="text-lg font-bold text-white">QUEST Nawabshah</p>
+            <p class="font-mono text-xs text-slate-500">Prestigious engineering & tech institution</p>
+            <p class="mt-4 font-mono text-sm text-accent">Class of 2028</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="border-t border-edge">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <p class="font-mono text-xs text-accent">Transmission Portal</p>
+        <h2 class="mt-2 text-3xl font-bold text-white">Get In Touch</h2>
+        <p class="mt-2 max-w-2xl text-slate-400">Available for full-time frontend internships, collaborative software projects and prompt engineering initiatives. Reach out directly or dispatch a message below.</p>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-5">
+          <div class="space-y-5 lg:col-span-2">
+            <div class="rounded-lg border border-edge bg-panel p-5">
+              <p class="font-mono text-xs text-slate-500">Direct Email</p>
+              <p class="mt-1 font-semibold text-white">lagharitaj00@gmail.com</p>
+              <p class="mt-1 text-sm text-slate-400">Fastest response window. Feel free to send internship specs or technical discussions.</p>
+              <button id="copyEmail" type="button" class="mt-4 rounded-md border border-edge bg-ink px-4 py-2 text-sm text-white hover:border-accent">Copy Email Address</button>
+            </div>
+            <div class="rounded-lg border border-edge bg-panel p-5">
+              <p class="font-mono text-xs text-slate-500">Professional Network</p>
+              <p class="mt-1 font-semibold text-white">LinkedIn Profile</p>
+              <p class="mt-1 text-sm text-slate-400">Connect for industry updates, technical credentials and professional lookups.</p>
+              <a href="https://www.linkedin.com/in/tabasum-laghari" target="_blank" rel="noopener" class="mt-4 inline-block break-all rounded-md border border-edge bg-ink px-4 py-2 font-mono text-xs text-accent hover:border-accent">linkedin.com/in/tabasum-laghari</a>
+            </div>
+            <div class="rounded-lg border border-edge bg-panel p-5">
+              <p class="font-mono text-xs text-slate-500">Physical Base</p>
+              <p class="mt-1 font-semibold text-white">Shaheed Benazirabad</p>
+              <p class="mt-1 text-sm text-slate-400">Sindh, Pakistan — open to remote, hybrid and on-site opportunities.</p>
+            </div>
+          </div>
+
+          <form id="contactForm" class="rounded-lg border border-edge bg-panel p-6 lg:col-span-3">
+            <p class="font-mono text-xs text-slate-500">Send a message</p>
+            <h3 class="mt-1 text-xl font-bold text-white">Internship & Collaboration Inquiries</h3>
+            <div class="mt-5 grid gap-4 sm:grid-cols-2">
+              <label class="block text-sm">Your name
+                <input id="fName" required type="text" placeholder="Your name" class="mt-1 w-full rounded-md border border-edge bg-ink px-3 py-2 text-white placeholder-slate-600" />
+              </label>
+              <label class="block text-sm">Email address
+                <input id="fEmail" required type="email" placeholder="name@company.com" class="mt-1 w-full rounded-md border border-edge bg-ink px-3 py-2 text-white placeholder-slate-600" />
+              </label>
+            </div>
+            <label class="mt-4 block text-sm">Subject
+              <input id="fSubject" required type="text" placeholder="Frontend internship offer / collaboration" class="mt-1 w-full rounded-md border border-edge bg-ink px-3 py-2 text-white placeholder-slate-600" />
+            </label>
+            <label class="mt-4 block text-sm">Message
+              <textarea id="fMessage" required rows="5" placeholder="Hello Tabasum, we reviewed your work and would like to discuss an opportunity..." class="mt-1 w-full rounded-md border border-edge bg-ink px-3 py-2 text-white placeholder-slate-600"></textarea>
+            </label>
+            <div class="mt-5 flex items-center justify-between gap-4">
+              <button type="submit" class="rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-ink hover:bg-accentDeep">Send Message</button>
+              <span class="font-mono text-xs text-slate-500">Opens your email app</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-edge bg-panel">
+    <div class="mx-auto grid max-w-6xl gap-6 px-5 py-10 md:grid-cols-3">
+      <div>
+        <p class="font-bold text-white">Tabasum Laghari <span class="font-mono text-xs text-slate-500">Portfolio</span></p>
+        <p class="mt-2 text-sm text-slate-400">Frontend Web Developer & Prompt Engineer specialized in modern professional interfaces, LLM agent workflows and high-performance web UI.</p>
+      </div>
+      <div>
+        <p class="font-mono text-xs text-slate-500">Direct Support Endpoint</p>
+        <a href="mailto:lagharitaj00@gmail.com" class="mt-1 block text-sm text-accent">lagharitaj00@gmail.com</a>
+        <p class="mt-1 text-sm text-slate-400">Sindh, Pakistan</p>
+      </div>
+      <div class="flex items-start gap-3 md:justify-end">
+        <a href="https://www.linkedin.com/in/tabasum-laghari" target="_blank" rel="noopener" class="rounded-md border border-edge px-3 py-2 text-sm text-white hover:border-accent">LinkedIn</a>
+        <a href="mailto:lagharitaj00@gmail.com" class="rounded-md border border-edge px-3 py-2 text-sm text-white hover:border-accent">Email</a>
+      </div>
+    </div>
+    <div class="border-t border-edge py-4 text-center font-mono text-xs text-slate-500">
+      © <span id="year">2026</span> Tabasum Laghari. Engineered with high-precision frontend architecture. · HTML + Tailwind CSS
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("copyEmail").addEventListener("click", function () {
+      var btn = this;
+      navigator.clipboard.writeText("lagharitaj00@gmail.com").then(function () {
+        btn.textContent = "Copied!";
+        setTimeout(function () { btn.textContent = "Copy Email Address"; }, 2000);
+      });
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("fName").value;
+      var email = document.getElementById("fEmail").value;
+      var subject = document.getElementById("fSubject").value;
+      var msg = document.getElementById("fMessage").value;
+      var body = msg + "\n\nFrom: " + name + " (" + email + ")";
+      window.location.href = "mailto:lagharitaj00@gmail.com?subject=" +
+        encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
